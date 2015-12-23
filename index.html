@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hangman</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class='normal'>
+	
+	<div id="title">Let's Play Hangman</div>
+	<div id='display'>
+		<img src="images/gallows.png" id = 'gallows'>
+		<div id="hanged">
+			<img class="part 1" id ="head"src='images/head.png'>
+			<img class="part 2" id ="body"src='images/body.png'>
+			<img class="part 3" id ="leftArm"src='images/leftarm.png'>
+			<img class="part 4" id ="rightArm"src='images/rightarm.png'>
+			<img class="part 5" id ="rightLeg"src='images/rightleg.png'>
+			<img class="part 6" id ="leftLeg"src='images/leftleg.png'>
+		</div>
+	<h1 id="defTitle">Definition:</h1>
+	<div id="definition"></div>
+	</div>
+	<div id="entryForm">
+		<form>
+			<input type="text" id='letterEntry'>
+			<input type='submit' id='submit' value="Enter Your Letter Here!">
+
+		</form>
+	</div>
+	<div id="letters">
+		<div id='letterWrapper'>
+			<div class="letterBox"><div class = "letter" id="letter0"></div></div>
+			<div class="letterBox"><div class = "letter" id="letter1"></div></div>
+			<div class="letterBox"><div class = "letter" id="letter2"></div></div>
+			<div class="letterBox"><div class = "letter" id="letter3"></div></div>
+		</div>
+	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="wordguesser.js"></script>
+</body>
+
+</html>
